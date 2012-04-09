@@ -387,6 +387,9 @@
 		this.removeFromActive( f, tag );
 		this.updateActiveClass( f );
 		this.resetSearch( f );
+		if ( this.options.close ) {
+			this.closePanel( f );
+		};
 	};
 
 	Filtrify.prototype.removeFromSelected = function ( f, tag ) {
